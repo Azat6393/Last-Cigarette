@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <com.facebook.login.widget.LoginButton
+        xmlns:facebook="http://schemas.android.com/apk/res-auto"
+        facebook:com_facebook_login_text="@string/continue_with_facebook"
+        android:id="@+id/facebook_button_logIn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingBottom="28dp"
+        android:paddingTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_button_logIn"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="30dp"
+        app:buttonSize="wide"
+        android:text="@string/continue_with_google"
+         />
+
+    <Button
+        android:id="@+id/createAccountRight"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:textSize="40sp"
+        android:background="@drawable/create_account_custom_button"
+        android:text="@string/create_account"
+        android:textColor="#FFFFFF"
+         />
+
+    <TextView
+        android:id="@+id/forgot_textView_iki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/Forgot_password"
+        android:textColor="#000000"
+        android:textSize="32sp"
+         />
+</LinearLayout>

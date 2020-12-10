@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Last Cigarette</string>
+
+    <string name="facebook_app_id">831263624348369</string>
+    <string name="fb_login_protocol_scheme">fb831263624348369</string>
+
+    <string name="failed_network">İnternet bağlantınızı kontrol ediniz</string>
+    <string name="you_already_have_an_account">Zaten bir hesabınınız var</string>
+    <string name="password_send_to_your_email">E-postanıza şifrenizi nasıl sıfırlayacağınıza dair talimatlar içeren bir mail gönderildi</string>
+    <string name="motivation">Motivasyon cümlesini yazınız</string>
+    <string name="warning">Uyarı</string>
+    <string name="change_date_dialog">Bırakma tarihini değiştirmek için tekrar başlamanız gerekiyor. Tekrar başlamak istediğinizden emin misiniz?</string>
+    <string name="start_over_message">Tekrar başlamak istediğinizden emin misiniz? Bu, bütün verilerinizi sıfırlayacak</string>
+    <string name="delete_account_message">Hesabınızı kalıcı olarak silmek istediğinize emin misiniz? Bu işlem geri alınamaz</string>
+    <string name="sign_out_message">Çıkış yapmak istediğinizden emin misiniz?</string>
+    <string name="save_text">Kayıt et</string>
+    <string name="continue_with_facebook">Facebook ile devam et</string>
+    <string name="continue_with_google">Google ile devam et</string>
+    <string name="minute">dakika</string>
+    <string name="min">dakika</string>
+    <string name="hour">saat</string>
+    <string name="hours">saat</string>
+    <string name="second">saniye</string>
+    <string name="month">ay</string>
+    <string name="months">ay</string>
+    <string name="day">gün</string>
+    <string name="days">gün</string>
+    <string name="year">yıl</string>
+    <string name="years">yıl</string>
+    <string name="weeks">hafta</string>
+    <string name="send">Gönder</string>
+    <string name="back">Geri</string>
+    <string name="sign_in">Oturum aç
+</string>
+    <string name="log_in">Oturum aç
+</string>
+    <string name="create_account">Kaydol
+</string>
+    <string name="email">E-posta</string>
+    <string name="password">Şıfre
+</string>
+    <string name="log_in_to_continue">Devam etmek için oturumu açınız
+</string>
+    <string name="welcome">Hoş geldiniz
+</string>
+    <string name="continue_">Devam
+</string>
+    <string name="whats_your_name">İsminiz ne?
+</string>
+    <string name="how_many_years_have_you_smoked">Kaç sene sigara kullandınız?
+</string>
+    <string name="how_many_cigarettes_did_you_smoke">Günde kaç sigara içiyordunuz?
+</string>
+    <string name="how_many_cigarettes_did_you_a_pack_contain">Bir pakette kaç sigara var?
+</string>
+    <string name="how_much_did_a_cigarette_pack_cost">Bir paket sigara fiyatı ne kadar?
+</string>
+    <string name="when_did_you_quit_smoking">Ne zaman sigarayı bıraktınız?
+</string>
+    <string name="already_have_an_account">Zaten bir hesabınız varmı?</string>
+    <string name="smoke_free">Sigarasız zaman
+</string>
+    <string name="money_saved">Kazanılan para
+</string>
+    <string name="cigarettes_not_smoked">İçilmeyen sigaralar
+</string>
+    <string name="life_regained">Kazanılan hayat
+</string>
+    <string name="quit_smoking_tips">Sigarayı bırakma tavsiyeler
+</string>
+    <string name="tips">Tavsiyeler
+</string>
+    <string name="health">Sağlık
+</string>
+    <string name="the_date_you_quit_smoking">Bırakma tarihi
+</string>
+    <string name="targets">Hedefler
+</string>
+    <string name="target_reached">Ulaşılan hedefler:
+</string>
+    <string name="you_have_not_smoked_20_cigarettes">İçmediniz</string>
+    <string name="cigarettes_20">20 sigara</string>
+    <string name="cigarettes_50">50 sigara</string>
+    <string name="cigarettes_100">100 sigara</string>
+    <string name="cigarettes_250">250 sigara</string>
+    <string name="cigarettes_500">500 sigara</string>
+    <string name="cigarettes_750">750 sigara</string>
+    <string name="cigarettes_1000">1000 sigara</string>
+    <string name="cigarettes_1500">1500 sigara</string>
+    <string name="cigarettes_2500">2500 sigara</string>
+    <string name="cigarettes_5000">5000 sigara</string>
+    <string name="cigarettes_7500">7500 sigara</string>
+    <string name="cigarettes_10000">10000 sigara</string>
+    <string name="You_have_saved_10_dollar">Tasarruf etdiniz</string>
+    <string name="you_did_not_smoke_1_days">Sigara kullanmadınız</string>
+    <string name="dont_1_days">1 gün</string>
+    <string name="dont_3_days">3 gün</string>
+    <string name="dont_7_days">7 gün</string>
+    <string name="dont_14_days">14 gün</string>
+    <string name="dont_21_days">21 gün</string>
+    <string name="dont_1_month">1 ay</string>
+    <string name="dont_3_months">3 ay</string>
+    <string name="dont_6_months">6 ay</string>
+    <string name="dont_9_months">9 ay</string>
+    <string name="dont_1_year">1 sene</string>
+    <string name="dont_2_years">2 sene</string>
+    <string name="dont_5_years">5 sene</string>
+    <string name="during_the_period_that_you_smoked">Sigara içdiğiniz dönemde:</string>
+    <string name="cigarettes_smoked">Sigara içildi</string>
+    <string name="money_wasted">Para harcandı
+</string>
+    <string name="life_lost">Hayat Kaybedildi
+</string>
+    <string name="old_habits">Eski alışkanlıklar
+</string>
+    <string name="quit_date">Bırakma tarihi
+</string>
+    <string name="cigarettes_per_day">Günlük sigara
+</string>
+    <string name="pack_cost">Bir paketin fiyatı
+</string>
+    <string name="cigarettes_per_pack">Paket başına sigara
+</string>
+    <string name="technical">Teknik
+</string>
+    <string name="delete_account">Hesabı sil
+</string>
+    <string name="start_again">Tekrar başla
+</string>
+    <string name="sign_out">Çıkış yap
+</string>
+    <string name="save">Kaydet
+</string>
+    <string name="m">d</string>
+    <string name="h">s</string>
+    <string name="d">g</string>
+    <string name="mn">a</string>
+    <string name="are_you_sure">Eminmisiniz?
+</string>
+    <string name="yes">Evet</string>
+    <string name="cancel">İptal</string>
+    <string name="ask_former_smokers_you_know_how_they_quit">Sigara bırakan kişilere nasıl başardıklarını sorun</string>
+    <string name="Read_everything_you_can_on_the_effects_of_smoking_and_how_other_people_have_quit">Sigara içmenin etkileri hakkında ve insanların sigarayı nasıl bıraktığına dair her şeyi okuyun</string>
+    <string name="White_your_reasons_to_quit_smoking_When_you_feel_the_urge_to_smoke_review_these_reasons">Sigarayı bırakma sebeplerinizi yazın. Sigara içmek istediğinizde, sebeplerinizi gözden geçirin</string>
+    <string name="Keep_a_log_of_how_much_better_you_feel_and_how_your_health_is_improving">İlk hafta sonunda kendinizi nasıl daha sağlıklı hissettiğinizi ve kendinizi nasıl daha iyi hissettiğinize dair kayıt tutun</string>
+    <string name="Thing_of_all_the_money_you_will_be_saving_by_not_buying_cigarettes._Plan_to_spend_it_on_something_special">Sigara satın almayarak tasarruf edeceğiniz parayı düşünün. Bu parayı sizin için özel olan şeyler için harcamak adına plan yapın</string>
+    <string name="Quit_smoking_with_a_friend_and_support_one_another">Sigarayı bir arkadaşınızla beraber bırakın ve birbinize destek olun</string>
+    <string name="Ask_your_friends_not_to_be_judgmental_and_to_support_your_qutting_ask_then_to_not_smoke_around_you">Arladaşlarınıza yargılayıcı olmamalarını ve size destek olmalarını söyleyin. Yanınızda sigara içmemelerini söyleyin</string>
+    <string name="Avoid_caffeine_and_alcohol_if_they_increase_your_craving_for_nicotine">Eğer nikotin ihtiyacınızı arttırıyorlarsa, kafein ve alkolden uzak durun</string>
+    <string name="Throw_away_your_ashtrays_lighters_and_other_smoking_paraphernalia">Küllük, çakmak ve diğer sigarayla ilgili eşyalarını atın</string>
+    <string name="Take_relaxing_warm_baths_and_showers">Rahatlatıcı köpük bayosu ve duş alın</string>
+    <string name="Take_a_long_walk">Uzun yürüyüşler yapın</string>
+    <string name="Listen_to_music">Müzik dinleyin</string>
+    <string name="Enjoy_your_freedom_Time_is_on_your_side">Özgürlüğünüzün tadını çıkarın. Zaman sizin yanınızda</string>
+    <string name="Forgot_password">Şifreyi unuttum</string>
+    <string name="Your_blood_pressure_and_pulse_return_to_normal">Kan basıncınız ve nabzınız normale döndü</string>
+    <string name="Nicotine_receptors_starts_to_cry_and_go_hungry">Nikotin reseptörleriniz aç kalmaya başladı, aç kalan reseptörler ölmeye başlayacak</string>
+    <string name="Nicotine_level_in_your_bloodstream_has_decreased_by_90_percent">Kanınızdaki nikotin seviyesi yüzde 90 civarında düşüş yaşadı</string>
+    <string name="Nicotine_carbon_monoxide_and_oxygen_levels_in_your_body_begin_to_return_to_normal">Vücudunuzdaki nikotin, karbon monoksit ve oksijen seviyeleri normala dönmeye başladı</string>
+    <string name="Risk_of_heart_attack_is_decreased">Kalp krizi riskiniz düşmeye başladı</string>
+    <string name="Ability_to_smell_and_taste_has_increased">Koku ve tad alma hisleriniz güçlenmeye başladı</string>
+    <string name="Your_body_is_now_free_of_nicotine_and_your_lungs_are_now_clearner_breating_is_more_easier">Vücudunuzdaki tüm nikotinden kurtuldunuz. Artık akciğerleriniz çok daha temiz ne nefes almanız daha kolay</string>
+    <string name="Worst_withdrawal_symptoms_have_passed_now_you_can_brag_about_quiting_smoking">Nikotin yoksunluğunun en kötü yan etkileri tamamen kayboldu. Artık sigarayı bırakmak konusunda övünebilirsin</string>
+    <string name="Energy_level_peaks_you_feek_like_an_athlete">Enerji seviyeniz zirve seviyelere ulaştı. Koşmak ve spor yapmak artık daha kolay</string>
+    <string name="Circulation_improves_and_exercise_gets_easier_lung_functions_also_improves">Kan dolaşımınız rahatladı, egrezsiz yapmanız daha da kolaylaştı</string>
+    <string name="Coughing_and_shortness_of_breath_decrease_your_lungs_are_now_very_healthy">Öksürükler ve nefes darlıkları çok düşük seviyelere geriledi. Akciğerleriniz artık çok daha sağlıklı</string>
+    <string name="Your_risk_of_coronary_heart_disease_is_about_half_that_of_a_smoker">Kalp damar hastalıkları riskiniz sigara içenlere göre yarı yarıya düştü</string>
+    <string name="Your_stroke_risk_is_reduced_to_that_of_a_nonsmoker_5_to_15_years_after_qutting">Felç ve inme riskiniz hiç sigara içmemiş biriyle aynı seviyeye geriledi</string>
+    <string name="Your_risk_of_lung_cancer_falls_to_about_half_that">Akciğer kanseri riskiniz sigara içen birine göre yarı yarıya azaldı ve gırtlak, yemek borusu, mesena, boyun ve pankreas kanseri  riskleriniz ciddi bir şekilde azaldı</string>
+    <string name="The_risk_of_coronary_heart_desease_is_like_you_have_never_smoked">Kalp damar hastalıkları riskiniz sanki hiç sigaraya başlamamışsınız gibi</string>
+
+
+    <string-array name="moneys">
+        <item>₺</item>
+        <item>₽</item>
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+        <item>CHF</item>
+        <item>лв</item>
+        <item>TMT</item>
+        <item>₴</item>
+        <item>¥</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Last Cigarette</string>
+
+    <string name="facebook_app_id">831263624348369</string>
+    <string name="fb_login_protocol_scheme">fb831263624348369</string>
+    <string name="failed_network">Произошла сетевая ошибка</string>
+
+    <string name="you_already_have_an_account">У вас уже есть учетная запись</string>
+    <string name="password_send_to_your_email">На вашу электронную почту отправлено письмо с инструкциями по сбросу пароля</string>
+    <string name="motivation">Напишите мотивационное предложение</string>
+    <string name="warning">Осторожно</string>
+    <string name="change_date_dialog">Вам нужно начать заново, чтобы изменить дату отказа от курения. Вы уверены, что хотите это сдулать?</string>
+    <string name="start_over_message">Вы уверены, что хотите начать заново? Все данные будут сброшены</string>
+    <string name="delete_account_message">Вы уверены, что хотите навсегда удалить свой аккаунт? Эти дейсвия необратимы</string>
+    <string name="sign_out_message">Вы уверены, что хотите выйти?</string>
+    <string name="save_text">сохранить</string>
+    <string name="continue_with_facebook">Продолжить с Facebook</string>
+    <string name="continue_with_google">Продолжить с Google</string>
+    <string name="minute">минута</string>
+    <string name="min">мин</string>
+    <string name="hour">час</string>
+    <string name="hours">часов</string>
+    <string name="second">секунда</string>
+    <string name="month">месяц</string>
+    <string name="months">месяцев</string>
+    <string name="day">день</string>
+    <string name="days">дней</string>
+    <string name="year">год</string>
+    <string name="years">года</string>
+    <string name="weeks">недель</string>
+    <string name="send">Отправить</string>
+    <string name="back">Назад</string>
+    <string name="sign_in">Вход</string>
+    <string name="log_in">Вход</string>
+    <string name="create_account">Создать аккунт</string>
+    <string name="email">Электронный адрес</string>
+    <string name="password">Пароль</string>
+    <string name="log_in_to_continue">Войдите что бы продолжить</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="continue_">Продолжить</string>
+    <string name="whats_your_name">Как вас зовут?</string>
+    <string name="how_many_years_have_you_smoked">Сколько лет вы курили?</string>
+    <string name="how_many_cigarettes_did_you_smoke">Сколько сигарет вы курили в день?</string>
+    <string name="how_many_cigarettes_did_you_a_pack_contain">Сколько сигарет было в пачке?</string>
+    <string name="how_much_did_a_cigarette_pack_cost">Сколько стоило пачка сигарет?</string>
+    <string name="when_did_you_quit_smoking">Когда вы бросили курить?</string>
+    <string name="already_have_an_account">Уже есть учетная запись?</string>
+    <string name="smoke_free">Не курю</string>
+    <string name="money_saved">Денег сэкономлено</string>
+    <string name="cigarettes_not_smoked">Сигарет не выкурено</string>
+    <string name="life_regained">Жизни восстановлено</string>
+    <string name="quit_smoking_tips">Советы как бросить курить</string>
+    <string name="tips">Советы</string>
+    <string name="health">Здоровье</string>
+    <string name="the_date_you_quit_smoking">Дата бросания</string>
+    <string name="targets">Цели</string>
+    <string name="target_reached">Цель достигнута:</string>
+    <string name="you_have_not_smoked_20_cigarettes">Вы не выкурили</string>
+    <string name="cigarettes_20">20 сигарет</string>
+    <string name="cigarettes_50">50 сигарет</string>
+    <string name="cigarettes_100">100 сигарет</string>
+    <string name="cigarettes_250">250 сигарет</string>
+    <string name="cigarettes_500">500 сигарет</string>
+    <string name="cigarettes_750">750 сигарет</string>
+    <string name="cigarettes_1000">1000 сигарет</string>
+    <string name="cigarettes_1500">1500 сигарет</string>
+    <string name="cigarettes_2500">2500 сигарет</string>
+    <string name="cigarettes_5000">5000 сигарет</string>
+    <string name="cigarettes_7500">7500 сигарет</string>
+    <string name="cigarettes_10000">10000 сигарет</string>
+    <string name="You_have_saved_10_dollar">Сэкономлено</string>
+    <string name="you_did_not_smoke_1_days">Вы не курили</string>
+    <string name="dont_1_days">1 день</string>
+    <string name="dont_3_days">3 дня</string>
+    <string name="dont_7_days">7 дней</string>
+    <string name="dont_14_days">14 дней</string>
+    <string name="dont_21_days">21 дней</string>
+    <string name="dont_1_month">1 месяц</string>
+    <string name="dont_3_months">3 месяца</string>
+    <string name="dont_6_months">6 месяцов</string>
+    <string name="dont_9_months">9 месяцов</string>
+    <string name="dont_1_year">1 год</string>
+    <string name="dont_2_years">2 года</string>
+    <string name="dont_5_years">5 лет</string>
+    <string name="during_the_period_that_you_smoked">За период что вы курили:</string>
+    <string name="cigarettes_smoked">Cигарет выкурено</string>
+    <string name="money_wasted">Денег впустую</string>
+    <string name="life_lost">Жизни потеряно</string>
+    <string name="old_habits">Старые привычки</string>
+    <string name="quit_date">Дата бросания</string>
+    <string name="cigarettes_per_day">Выкуривали в день</string>
+    <string name="pack_cost">Цена пачки</string>
+    <string name="cigarettes_per_pack">Сигарет в пачке</string>
+    <string name="technical">Технический</string>
+    <string name="delete_account">Удалить аккунт</string>
+    <string name="start_again">Начать заново</string>
+    <string name="sign_out">Выйти</string>
+    <string name="save">Сохранить</string>
+    <string name="m">м</string>
+    <string name="h">ч</string>
+    <string name="d">д</string>
+    <string name="mn">M</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="yes">Да</string>
+    <string name="cancel">Отменить</string>
+    <string name="ask_former_smokers_you_know_how_they_quit">Спросите бывших курильщиков, которых вы знаете, как они бросали.</string>
+    <string name="Read_everything_you_can_on_the_effects_of_smoking_and_how_other_people_have_quit">Прочтите все, что можно, о последствиях курения и о том, как другие люди бросали</string>
+    <string name="White_your_reasons_to_quit_smoking_When_you_feel_the_urge_to_smoke_review_these_reasons">Запишите причины бросить курить. Когда вы почувствуете желание курить, просмотрите эти причины</string>
+    <string name="Keep_a_log_of_how_much_better_you_feel_and_how_your_health_is_improving">Следите за тем, насколько лучше вы себя чувсвуете и как улучшается выше здоровье</string>
+    <string name="Thing_of_all_the_money_you_will_be_saving_by_not_buying_cigarettes._Plan_to_spend_it_on_something_special">Подумайте обо всех деньгах, которые вы будете экономить, не покупая сигареты. Планируйте потратить их на что-то особенное</string>
+    <string name="Quit_smoking_with_a_friend_and_support_one_another">Бросьте курить с другом и поддерживайте друг друга.</string>
+    <string name="Ask_your_friends_not_to_be_judgmental_and_to_support_your_qutting_ask_then_to_not_smoke_around_you">Попросите своих курящих друзей не критиковать и поддержать ваше решение бросать. Также попросите их не курить возле вас</string>
+    <string name="Avoid_caffeine_and_alcohol_if_they_increase_your_craving_for_nicotine">Избегайте кофеина и алкоголя, если они увеличивают вашу тягу к никотину</string>
+    <string name="Throw_away_your_ashtrays_lighters_and_other_smoking_paraphernalia">Выбросите все пепельницы, зажигалки и другие принадлежности для курения</string>
+    <string name="Take_relaxing_warm_baths_and_showers">Принимайте расслабляющие теплые ванны и души</string>
+    <string name="Take_a_long_walk">Делайте длительные прогулки</string>
+    <string name="Listen_to_music">Слушайте музыку</string>
+    <string name="Enjoy_your_freedom_Time_is_on_your_side">Наслаждайтесь свободой. Время на вашей стороне</string>
+    <string name="Forgot_password">Забыли пароль</string>
+    <string name="Your_blood_pressure_and_pulse_return_to_normal">Артериальное давление и частота сердечных сокращений понижаются</string>
+    <string name="Nicotine_receptors_starts_to_cry_and_go_hungry">Рецепторы никотина начнут голодать, голодные рецепторы начнут умирать</string>
+    <string name="Nicotine_level_in_your_bloodstream_has_decreased_by_90_percent">Уровень никотина в крови упал примерно на 90 процентов</string>
+    <string name="Nicotine_carbon_monoxide_and_oxygen_levels_in_your_body_begin_to_return_to_normal">Уровень окиси углерода в крови снизится наполовину, уровень кислорода нормализуется</string>
+    <string name="Risk_of_heart_attack_is_decreased">Ваш риск сердечного приступа начал снижаться</string>
+    <string name="Ability_to_smell_and_taste_has_increased">Обоняние и вкусовые рецепторы обрятут нормальную чувствительность</string>
+    <string name="Your_body_is_now_free_of_nicotine_and_your_lungs_are_now_clearner_breating_is_more_easier">Вы избавились от никотина в своем теле. Теперь ваши легкие намного чище, и им легче дышать</string>
+    <string name="Worst_withdrawal_symptoms_have_passed_now_you_can_brag_about_quiting_smoking">Худшие симптомы отмены прошли, теперь вы можете похвастаться отказом от курения</string>
+    <string name="Energy_level_peaks_you_feek_like_an_athlete">Ваш уровень энергии достиг пика. Бег и упражнения стали проще</string>
+    <string name="Circulation_improves_and_exercise_gets_easier_lung_functions_also_improves">Кровообращение усилилась и будет улучшаться в течение следующих 10 недель</string>
+    <string name="Coughing_and_shortness_of_breath_decrease_your_lungs_are_now_very_healthy">Кашель и хрипы и другие проблемы с дыханием исчезнули, объём лёгких увеличится на 10%</string>
+    <string name="Your_risk_of_coronary_heart_disease_is_about_half_that_of_a_smoker">Риск сердечного приступа снизилась наполовину</string>
+    <string name="Your_stroke_risk_is_reduced_to_that_of_a_nonsmoker_5_to_15_years_after_qutting">Риск инсульта станет таким же, как у некурящего человека</string>
+    <string name="Your_risk_of_lung_cancer_falls_to_about_half_that">Риск рака легких снизилась до уровня риска у некурящего человека</string>
+    <string name="The_risk_of_coronary_heart_desease_is_like_you_have_never_smoked">Риск инфаркта вернётся к уровню риска у некурящего человека</string>
+
+
+    <string-array name="moneys">
+        <item>₺</item>
+        <item>₽</item>
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+        <item>CHF</item>
+        <item>лв</item>
+        <item>TMT</item>
+        <item>₴</item>
+        <item>¥</item>
+    </string-array>
+
+
+
+</resources>

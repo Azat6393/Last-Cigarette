@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="pembeAnaRenk">#FF9090</color>
+    
+    <color name="Yellow">#FFFF00</color>
+    <color name="Green">#00FF00</color>
+    <color name="Magenta">#FF00FF</color>
+
+    <color name="progressColor">#FFE7E7</color>
+    <color name="BLACK">#000000</color>
+</resources>

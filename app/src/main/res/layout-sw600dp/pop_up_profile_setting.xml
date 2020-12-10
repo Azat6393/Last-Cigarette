@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/pop_up_setting">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="550dp"
+        android:layout_height="500dp"
+        app:cardCornerRadius="35dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dialog_card_view_name_background">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/pop_up_profile_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_one"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp">
+            </ImageView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/dialog_card_name_background_two">
+
+            <LinearLayout
+                android:id="@+id/pop_up_name_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/pop_up_name_editText"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Azat"
+                    android:textColor="#707070"
+                    android:textSize="45sp"
+                    android:gravity="center"
+                    android:backgroundTint="#FF8585"
+                    android:theme="@style/TextInputLayoutAppearance2"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center_horizontal">
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <Button
+                        android:id="@+id/pop_up_dont_save_name"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="25dp"
+                        android:textSize="23sp"
+                        android:text="@string/cancel"
+                        android:textColor="#fff"
+                        android:background="@drawable/devam_button_custom">
+                    </Button>
+                    <Button
+                        android:id="@+id/pop_up_save_name"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="25dp"
+                        android:textSize="23sp"
+                        android:text="@string/save"
+                        android:textColor="#fff"
+                        android:background="@drawable/devam_button_custom">
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pop_up_price_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/pop_up_price_editText"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="18.00"
+                        android:textColor="#707070"
+                        android:textSize="45sp"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:backgroundTint="#FF8585"
+                        android:theme="@style/TextInputLayoutAppearance2"
+                        android:layout_gravity="center_horizontal">
+                    </EditText>
+
+                    <Spinner
+                        android:id="@+id/profile_pop_up_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="47dp"
+                        android:layout_marginStart="16dp"
+                        android:backgroundTint="#FF8585" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <Button
+                        android:id="@+id/pop_up_dont_save_price"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="25dp"
+                        android:textSize="23sp"
+                        android:text="@string/cancel"
+                        android:textColor="#fff"
+                        android:background="@drawable/devam_button_custom">
+                    </Button>
+                    <Button
+                        android:id="@+id/pop_up_save_price"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="25dp"
+                        android:textSize="23sp"
+                        android:text="@string/save"
+                        android:textColor="#fff"
+                        android:background="@drawable/devam_button_custom">
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

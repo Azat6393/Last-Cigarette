@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F4F5"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/setting_background"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:elevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/during_the_period_that_you_smoked"
+                    android:textSize="40sp"
+                    android:textColor="#FF9090"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp">
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_icilen_sigaralar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/setting_icon_one"
+                        android:layout_marginLeft="20dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cigarettes_smoked"
+                        android:textSize="35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/profile_icilen_sigara_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45625"
+                        android:textColor="#FF9090"
+                        android:textSize="38sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="30dp"
+                        android:gravity="end">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/harcana_para_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/setting_icon_two"
+                        android:layout_marginLeft="20dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_wasted"
+                        android:textSize="35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/profile_harcanan_para_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45625 $"
+                        android:textColor="#FF9090"
+                        android:textSize="38sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="30dp"
+                        android:gravity="end">
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/kayb_edilen_zaman_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/setting_icon_three"
+                        android:layout_marginLeft="20dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/life_lost"
+                        android:textSize="35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/profile_zaman_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="11m 18d 12h"
+                        android:textColor="#FF9090"
+                        android:textSize="38sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="30dp"
+                        android:gravity="end">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/setting_background"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:elevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/old_habits"
+                    android:textSize="40sp"
+                    android:textColor="#FF9090"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp">
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/tarih_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quit_date"
+                        android:textSize="35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:id="@+id/profile_birakilan_zaman_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00.00.0000y 0:00:00"
+                            android:textColor="#FF9090"
+                            android:textSize="38sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="3dp">
+                        </TextView>
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/strelka"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="13dp">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gunlun_icilen_sigara_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cigarettes_per_day"
+                        android:textSize="35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/profile_gunluk_sigara_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textColor="#FF9090"
+                        android:textSize="38sp"
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="30dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/price_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pack_cost"
+                        android:textSize="35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/profile_sigara_fiyati_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#FF9090"
+                            android:textSize="38sp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="3dp">
+                        </TextView>
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/strelka"
+                            android:layout_marginEnd="13dp"
+                            android:layout_gravity="center">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/paketteki_sigara_sayisi_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cigarettes_per_pack"
+                        android:textSize="35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/profile_paketteki_sigara_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textColor="#FF9090"
+                        android:textSize="38sp"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:layout_marginEnd="30dp">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/setting_background"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:elevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/technical"
+                    android:textSize="40sp"
+                    android:textColor="#FF9090"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp">
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/name_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/whats_your_name"
+                        android:textSize="35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="end">
+
+                        <TextView
+                            android:id="@+id/profile_isim_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Azat"
+                            android:textColor="#FF9090"
+                            android:textSize="38sp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="3dp">
+                        </TextView>
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/strelka"
+                            android:layout_marginEnd="13dp"
+                            android:layout_gravity="center">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/delete_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/delete_account"
+                        android:textSize="35sp">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/start_over_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_again"
+                        android:textSize="35sp"
+                        android:textColor="#FF9090"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sign_out_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_out"
+                        android:textSize="35sp"
+                        android:layout_marginStart="20dp">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Chronometer
+            android:id="@+id/karisik_fragment_chronometer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            >
+        </Chronometer>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health"
+            android:letterSpacing="0.02"
+            android:textColor="#FF9090"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/advent_pro_light"
+            android:letterSpacing="0.1"
+            android:text="@string/quit_date"
+            android:textColor="#CDB3B3"
+            android:textSize="40sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tarih_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:08, 24.06.2020"
+            android:textColor="#CDB3B3"
+            android:fontFamily="@font/advent_pro_light"
+            android:letterSpacing="0.1"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="30dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45px"
+            android:layout_marginBottom="10dp">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/waveLoadingView2"
+
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView2"
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC">
+            </me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC">
+            </me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toEndOf="@+id/waveLoadingView2"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView2"
+
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC">
+            </me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView4"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView1"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView1"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView5"
+
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView5"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView2"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView2"
+
+                app:layout_constraintTop_toBottomOf="@+id/waveLoadingView2"
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView6"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView3"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView3"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView5"
+
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView7"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView4"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView4"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView8"
+                app:wlv_borderColor="#FFBCBC"
+
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView8"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView5"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView5"
+
+                app:layout_constraintTop_toBottomOf="@+id/waveLoadingView5"
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView9"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView6"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView6"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView8"
+
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView10"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView7"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView11"
+
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView11"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView8"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView8"
+
+                app:layout_constraintTop_toBottomOf="@+id/waveLoadingView8"
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView12"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView9"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView9"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView11"
+                app:wlv_borderColor="#FFBCBC"
+
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView13"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView10"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView10"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView14"
+                app:wlv_borderColor="#FFBCBC"
+
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView14"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView11"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView11"
+
+                app:layout_constraintTop_toBottomOf="@+id/waveLoadingView11"
+                app:wlv_borderColor="#FFBCBC"
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView15"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView12"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView12"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView14"
+                app:wlv_borderColor="#FFBCBC"
+
+                app:wlv_borderWidth="3dp"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFBCBC"
+
+                app:wlv_titleBottomSize="2sp"
+                app:wlv_titleBottomStrokeColor="#FFBCBC"
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFBCBC"
+
+                app:wlv_titleCenterSize="2sp"
+                app:wlv_titleCenterStrokeColor="#FFBCBC"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFBCBC"
+                app:wlv_titleTopSize="2sp"
+                app:wlv_titleTopStrokeColor="#FFBCBC"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="#FFBCBC"></me.itangqi.waveloadingview.WaveLoadingView>
+
+            <ImageView
+                android:id="@+id/icon_image_view1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView1"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView1"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView1"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView1"
+                app:layout_constraintVertical_bias="0.6"
+                app:srcCompat="@drawable/yirmi_dakka_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView2"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView2"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView2"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView2"
+                app:layout_constraintVertical_bias="0.45"
+                app:srcCompat="@drawable/iki_saat_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView3"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView3"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView3"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView3"
+                app:srcCompat="@drawable/sekiz_saat_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView4"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView4"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView4"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView4"
+                app:layout_constraintVertical_bias="0.43"
+                app:srcCompat="@drawable/on_iki_saat_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view5"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView5"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView5"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView5"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView5"
+                app:layout_constraintVertical_bias="0.52"
+                app:srcCompat="@drawable/yirmi_dort_saat_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView6"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView6"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView6"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView6"
+                app:srcCompat="@drawable/iki_gun_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view7"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView7"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView7"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView7"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView7"
+                app:srcCompat="@drawable/uc_gun_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view8"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView8"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView8"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView8"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView8"
+                app:srcCompat="@drawable/dort_gun_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view9"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView9"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView9"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView9"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView9"
+                app:layout_constraintVertical_bias="0.58000004"
+                app:srcCompat="@drawable/alti_gun_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view10"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView10"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView10"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView10"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView10"
+                app:srcCompat="@drawable/on_iki_hafta_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view11"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView11"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView11"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView11"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView11"
+                app:srcCompat="@drawable/alti_ay_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view12"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView12"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView12"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView12"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView12"
+                app:layout_constraintVertical_bias="0.57"
+                app:srcCompat="@drawable/bir_yil_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view13"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView13"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView13"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView13"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView13"
+                app:srcCompat="@drawable/bes_yil_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view14"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView14"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView14"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView14"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView14"
+                app:srcCompat="@drawable/on_yil_icon" />
+
+            <ImageView
+                android:id="@+id/icon_image_view15"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView15"
+                app:layout_constraintEnd_toEndOf="@+id/waveLoadingView15"
+                app:layout_constraintStart_toStartOf="@+id/waveLoadingView15"
+                app:layout_constraintTop_toTopOf="@+id/waveLoadingView15"
+                app:layout_constraintVertical_bias="0.45"
+                app:srcCompat="@drawable/on_bes_yil_icon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

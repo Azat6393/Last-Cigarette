@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Last Cigarette</string>
+
+    <string name="facebook_app_id">831263624348369</string>
+    <string name="fb_login_protocol_scheme">fb831263624348369</string>
+
+    <string name="you_already_have_an_account">You already have an account</string>
+    <string name="password_send_to_your_email">An email has been sent to your email with instructions on how to reset your password</string>
+    <string name="failed_network">a network error has occurred</string>
+    <string name="motivation">Write the motivation sentence</string>
+    <string name="warning">Warning</string>
+    <string name="change_date_dialog">To change your quit date, you have to start again. Are you sure you want to start again?</string>
+    <string name="start_over_message">Are you sure that you want to start again? This will reset all your data</string>
+    <string name="delete_account_message">Are you sure you want to permanently delete your account? This action is irreversible</string>
+    <string name="sign_out_message">Are you sure you want to sign out</string>
+    <string name="save_text">save text</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="minute">minute</string>
+    <string name="min">min</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+    <string name="second">second</string>
+    <string name="month">month</string>
+    <string name="months">months</string>
+    <string name="day">day</string>
+    <string name="days">days</string>
+    <string name="year">year</string>
+    <string name="years">years</string>
+    <string name="weeks">weeks</string>
+    <string name="send">Send</string>
+    <string name="back">Back</string>
+    <string name="sign_in">Sign in</string>
+    <string name="log_in">Log in</string>
+    <string name="create_account">Create account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in_to_continue">Log in to continue</string>
+    <string name="welcome">Welcome</string>
+    <string name="continue_">Continue</string>
+    <string name="whats_your_name">What is your name?</string>
+    <string name="how_many_years_have_you_smoked">How many years have you smoked?</string>
+    <string name="how_many_cigarettes_did_you_smoke">How many cigarettes did you smoke per day?</string>
+    <string name="how_many_cigarettes_did_you_a_pack_contain">How many cigarettes did you a pack contain?</string>
+    <string name="how_much_did_a_cigarette_pack_cost">How much did a cigarette pack cost?</string>
+    <string name="when_did_you_quit_smoking">When did you quit smoking?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="smoke_free">Smoke free</string>
+    <string name="money_saved">Money saved</string>
+    <string name="cigarettes_not_smoked">Cigarettes not smoked</string>
+    <string name="life_regained">Life regained</string>
+    <string name="quit_smoking_tips">Quit smoking tips</string>
+    <string name="tips">Tips</string>
+    <string name="health">Health</string>
+    <string name="the_date_you_quit_smoking">The date you quit smoking</string>
+    <string name="targets">Targets</string>
+    <string name="target_reached">Target reached:</string>
+    <string name="you_have_not_smoked_20_cigarettes">You have not smoked</string>
+    <string name="cigarettes_20">20 cigarettes</string>
+    <string name="cigarettes_50">50 cigarettes</string>
+    <string name="cigarettes_100">100 cigarettes</string>
+    <string name="cigarettes_250">250 cigarettes</string>
+    <string name="cigarettes_500">500 cigarettes</string>
+    <string name="cigarettes_750">750 cigarettes</string>
+    <string name="cigarettes_1000">1000 cigarettes</string>
+    <string name="cigarettes_1500">1500 cigarettes</string>
+    <string name="cigarettes_2500">2500 cigarettes</string>
+    <string name="cigarettes_5000">5000 cigarettes</string>
+    <string name="cigarettes_7500">7500 cigarettes</string>
+    <string name="cigarettes_10000">10000 cigarettes</string>
+    <string name="You_have_saved_10_dollar">You have saved</string>
+    <string name="you_did_not_smoke_1_days">You have not smoked</string>
+    <string name="dont_1_days">1 day</string>
+    <string name="dont_3_days">3 days</string>
+    <string name="dont_7_days">7 days</string>
+    <string name="dont_14_days">14 days</string>
+    <string name="dont_21_days">21 days</string>
+    <string name="dont_1_month">1 month</string>
+    <string name="dont_3_months">3 months</string>
+    <string name="dont_6_months">6 months</string>
+    <string name="dont_9_months">9 months</string>
+    <string name="dont_1_year">1 year</string>
+    <string name="dont_2_years">2 years</string>
+    <string name="dont_5_years">5 years</string>
+    <string name="during_the_period_that_you_smoked">During the period that you smoked:</string>
+    <string name="cigarettes_smoked">Cigarettes smoked</string>
+    <string name="money_wasted">Money wasted</string>
+    <string name="life_lost">Life lost</string>
+    <string name="old_habits">Old habits</string>
+    <string name="quit_date">Quit date</string>
+    <string name="cigarettes_per_day">Cigarettes per day</string>
+    <string name="pack_cost">Pack cost</string>
+    <string name="cigarettes_per_pack">Cigarettes per pack</string>
+    <string name="technical">Technical</string>
+    <string name="delete_account">Delete account</string>
+    <string name="start_again">Start again</string>
+    <string name="sign_out">Sign out</string>
+    <string name="save">Save</string>
+    <string name="m">m</string>
+    <string name="h">h</string>
+    <string name="d">d</string>
+    <string name="mn">M</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="ask_former_smokers_you_know_how_they_quit">Ask former smokers you know how they quit</string>
+    <string name="Read_everything_you_can_on_the_effects_of_smoking_and_how_other_people_have_quit">Read everything you can on the effects of smoking and how other people have quit</string>
+    <string name="White_your_reasons_to_quit_smoking_When_you_feel_the_urge_to_smoke_review_these_reasons">White your reasons to quit smoking. When you feel the urge to smoke, review these reasons</string>
+    <string name="Keep_a_log_of_how_much_better_you_feel_and_how_your_health_is_improving">Keep a log of how much better you feel and how your health is improving</string>
+    <string name="Thing_of_all_the_money_you_will_be_saving_by_not_buying_cigarettes._Plan_to_spend_it_on_something_special">Thing of all the money you will be saving by not buying cigarettes. Plan to spend it on something special</string>
+    <string name="Quit_smoking_with_a_friend_and_support_one_another">Quit smoking with a friend and support one another</string>
+    <string name="Ask_your_friends_not_to_be_judgmental_and_to_support_your_qutting_ask_then_to_not_smoke_around_you">Ask your friends not to be judg-mental and to support your quitting. Ask then to not smoke around you</string>
+    <string name="Avoid_caffeine_and_alcohol_if_they_increase_your_craving_for_nicotine">Avoid caffeine and alcohol if they increase your craving for nicotine</string>
+    <string name="Throw_away_your_ashtrays_lighters_and_other_smoking_paraphernalia">Throw away your ashtrays, lighters, and other smoking paraphernalia</string>
+    <string name="Take_relaxing_warm_baths_and_showers">Take relaxing warm baths and showers</string>
+    <string name="Take_a_long_walk">Take a long walk</string>
+    <string name="Listen_to_music">Listen to music</string>
+    <string name="Enjoy_your_freedom_Time_is_on_your_side">Enjoy your freedom. Time is on your side</string>
+    <string name="Forgot_password">Forgot password</string>
+    <string name="Your_blood_pressure_and_pulse_return_to_normal">Your blood pressure and pulse return to normal</string>
+    <string name="Nicotine_receptors_starts_to_cry_and_go_hungry">Nicotine receptors starts to cry and go hungry</string>
+    <string name="Nicotine_level_in_your_bloodstream_has_decreased_by_90_percent">Nicotine level in your bloodstream has decreased by 90 percent</string>
+    <string name="Nicotine_carbon_monoxide_and_oxygen_levels_in_your_body_begin_to_return_to_normal">Nicotine, carbon monoxide and oxygen levels in your body begin to return to normal</string>
+    <string name="Risk_of_heart_attack_is_decreased">Risk of heart attack is decreased</string>
+    <string name="Ability_to_smell_and_taste_has_increased">Ability to smell and taste has increased</string>
+    <string name="Your_body_is_now_free_of_nicotine_and_your_lungs_are_now_clearner_breating_is_more_easier">Your body is now free of nicotine and your lungs are now clearer, breating is more easier</string>
+    <string name="Worst_withdrawal_symptoms_have_passed_now_you_can_brag_about_quiting_smoking">Worst withdrawal symptoms have passed, now you can brag about quiting smoking</string>
+    <string name="Energy_level_peaks_you_feek_like_an_athlete">Energy level peaks, you feek like an athlete</string>
+    <string name="Circulation_improves_and_exercise_gets_easier_lung_functions_also_improves">Circulation improves and exercise gets easier, lung functions also improves</string>
+    <string name="Coughing_and_shortness_of_breath_decrease_your_lungs_are_now_very_healthy">Coughing and shortness of breath decrease, your lungs are now very healthy</string>
+    <string name="Your_risk_of_coronary_heart_disease_is_about_half_that_of_a_smoker">Your risk of coronary heart disease is about half that of a smoker</string>
+    <string name="Your_stroke_risk_is_reduced_to_that_of_a_nonsmoker_5_to_15_years_after_qutting">Your stroke risk is reduced to that of a nonsmoker 5 to 15 years after quitting</string>
+    <string name="Your_risk_of_lung_cancer_falls_to_about_half_that">Your risk of lung cancer falls to about half that of a smoker and your risk of cancer of the mouth, throat, esophagus, bladder, cervix, and pancreas decreases</string>
+    <string name="The_risk_of_coronary_heart_desease_is_like_you_have_never_smoked">The risk of coronary heart disease is like you have never smoked</string>
+
+
+    <string-array name="moneys">
+        <item>₺</item>
+        <item>₽</item>
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+        <item>CHF</item>
+        <item>лв</item>
+        <item>TMT</item>
+        <item>₴</item>
+        <item>¥</item>
+    </string-array>
+
+</resources>

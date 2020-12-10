@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F4F5"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/akCigerImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="30dp"
+        android:src="@drawable/akciger"
+        app:layout_constraintBottom_toTopOf="@+id/siragaIcmekIstiyorumImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motivation_text_view" />
+
+    <TextView
+        android:id="@+id/motivation_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Motivaston cumlenizi yaziniz"
+        android:textAlignment="center"
+        android:textColor="@color/pembeAnaRenk"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/gecenZamanTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/smoke_free"
+                android:textColor="@color/pembeAnaRenk"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gunButtonImageView"
+                    android:layout_width="178dp"
+                    android:layout_height="108dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gecenZamanTextView"
+                    app:srcCompat="@drawable/gecen_zaman_button" />
+
+                <Chronometer
+                    android:id="@+id/gunlerSayisiTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tassarufTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_saved"
+                android:textColor="@color/pembeAnaRenk"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/tlButtonImageView"
+                    android:layout_width="178dp"
+                    android:layout_height="108dp"
+                    app:srcCompat="@drawable/bosluk_buttonlar"
+                    tools:layout_editor_absoluteY="44dp" />
+                <TextView
+                    android:id="@+id/tassarufSayisiTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="140 TL"
+                    android:textAlignment="center"
+                    android:textColor="@color/pembeAnaRenk"
+                    android:textSize="25sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/siragaIcmekIstiyorumImageView"
+        android:layout_width="333dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/clip" />
+
+    <TextView
+        android:id="@+id/siragaIcmekIstiyorumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quit_smoking_tips"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/siragaIcmekIstiyorumImageView"
+        app:layout_constraintEnd_toEndOf="@+id/siragaIcmekIstiyorumImageView"
+        app:layout_constraintStart_toStartOf="@+id/siragaIcmekIstiyorumImageView"
+        app:layout_constraintTop_toTopOf="@+id/siragaIcmekIstiyorumImageView" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/icilmeyenSigaraTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cigarettes_not_smoked"
+                android:textColor="@color/pembeAnaRenk"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icilmeyenSiragaSayisiImageView"
+                    android:layout_width="178dp"
+                    android:layout_height="108dp"
+                    app:srcCompat="@drawable/bosluk_buttonlar" />
+
+                <Chronometer
+                    android:id="@+id/icilmeyenSigaraSayisiTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:text="22"
+                    android:textColor="@color/pembeAnaRenk"
+                    android:textSize="25sp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/omrunuzeEklenenTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/life_regained"
+                android:textColor="@color/pembeAnaRenk"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/omrunuzeEklenenSureImageView"
+                    android:layout_width="178dp"
+                    android:layout_height="108dp"
+                    app:srcCompat="@drawable/bosluk_buttonlar" />
+
+                <TextView
+                    android:id="@+id/omrunuzeEklenenSureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="10a 5s 3dk "
+                    android:textAlignment="center"
+                    android:textColor="@color/pembeAnaRenk"
+                    android:textSize="25sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

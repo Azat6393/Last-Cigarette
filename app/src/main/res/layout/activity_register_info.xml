@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterInfoActivity"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/sigaraAnimation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/soruTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:srcCompat="@drawable/sigara_animation" />
+
+    <Button
+        android:id="@+id/devamButton"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:background="@drawable/devam_button_custom"
+        android:onClick="devamOnClick"
+        android:text="@string/continue_"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/devamButton1"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:background="@drawable/devam_button_custom"
+        android:onClick="devamOnClick1"
+        android:text="@string/continue_"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/devamButton2"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:background="@drawable/devam_button_custom"
+        android:onClick="devamOnClick2"
+        android:text="@string/continue_"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/devamButton3"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:background="@drawable/devam_button_custom"
+        android:onClick="devamOnClick3"
+        android:text="@string/continue_"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/devamButton4"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:background="@drawable/devam_button_custom"
+        android:onClick="devamOnClick4"
+        android:text="@string/continue_"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/devamButton5"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:background="@drawable/devam_button_custom"
+        android:onClick="devamOnClick5"
+        android:text="@string/continue_"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#FF8585"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#FF8585"
+        android:textColorHint="#FF8585"
+        android:theme="@style/TextInputLayoutAppearance2"
+        app:layout_constraintBottom_toTopOf="@+id/devamButton"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/devamButton" />
+
+    <EditText
+        android:id="@+id/kacSeneEditText"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#FF8585"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#FF8585"
+        android:textColorHint="#FF8585"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        android:theme="@style/TextInputLayoutAppearance2"
+        app:layout_constraintBottom_toTopOf="@+id/devamButton"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/devamButton" />
+
+    <TextView
+        android:id="@+id/soruTextView"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="@string/whats_your_name"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/devamButton" />
+
+    <TextView
+        android:id="@+id/soruTextView1"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="@string/how_many_years_have_you_smoked"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/devamButton" />
+
+    <TextView
+        android:id="@+id/soruTextView2"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="@string/how_many_cigarettes_did_you_smoke"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton2"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/devamButton2" />
+
+    <TextView
+        android:id="@+id/soruTextView3"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="@string/how_many_cigarettes_did_you_a_pack_contain"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton3"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/devamButton3" />
+
+    <TextView
+        android:id="@+id/soruTextView4"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="@string/how_much_did_a_cigarette_pack_cost"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton4"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/devamButton4" />
+
+    <TextView
+        android:id="@+id/soruTextView5"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="@string/when_did_you_quit_smoking"
+        android:textAlignment="center"
+        android:textColor="#707070"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton5"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/devamButton5" />
+
+    <TextView
+        android:id="@+id/backTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/back"
+        android:visibility="invisible"
+        android:textColor="#707070"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="16dp"
+        android:progressDrawable="@drawable/linear_progress_bar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/sigaraSayiEditText"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#FF8585"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#FF8585"
+        android:textColorHint="#FF8585"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="491dp"
+        android:theme="@style/TextInputLayoutAppearance2"
+        app:layout_constraintBottom_toTopOf="@+id/devamButton2"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/devamButton2"/>
+
+    <EditText
+        android:id="@+id/paketteSigaraSayiEditText"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#FF8585"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#FF8585"
+        android:textColorHint="#FF8585"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="491dp"
+        android:theme="@style/TextInputLayoutAppearance2"
+        app:layout_constraintBottom_toTopOf="@+id/devamButton3"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/devamButton3"/>
+
+    <EditText
+        android:id="@+id/fiyatEditText"
+        android:layout_width="200dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#FF8585"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#FF8585"
+        android:textColorHint="#FF8585"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        android:theme="@style/TextInputLayoutAppearance2"
+        app:layout_constraintBottom_toTopOf="@+id/devamButton4"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton4" />
+
+    <TextView
+        android:id="@+id/calendarTextView"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="25dp"
+        android:text="Suan"
+        android:textAlignment="center"
+        android:textColor="#FF8585"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/devamButton5"
+        app:layout_constraintEnd_toEndOf="@+id/devamButton5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/devamButton5">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#FF8585"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/fiyatEditText"
+        app:layout_constraintTop_toTopOf="@+id/fiyatEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

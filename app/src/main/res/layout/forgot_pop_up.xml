@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/forgot_id">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Forgot_password"
+        android:textSize="15dp"
+        android:textColor="#FF9090"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+    </TextView>
+
+    <EditText
+        android:id="@+id/forgot_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:theme="@style/TextInputLayoutAppearance3"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+        <ProgressBar
+            android:id="@+id/forgot_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:indeterminateTint="#FF9090"
+            android:layout_gravity="center">
+        </ProgressBar>
+
+        <Button
+            android:id="@+id/forgot_send_button"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:textColor="#fff"
+            android:text="@string/send"
+            android:textSize="13dp"
+            android:background="@drawable/devam_button_custom"
+            android:layout_gravity="center">
+        </Button>
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/forgot_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center">
+    </TextView>
+
+</LinearLayout>
