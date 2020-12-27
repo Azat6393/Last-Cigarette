@@ -105,16 +105,16 @@ public class KayitOlmaFragmentBir extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), RegisterInfoActivity.class);
                 getActivity().startActivity(intent);
-                getActivity().overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getContext(),R.style.BottomSheetDialogTheme);
+                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getContext(), R.style.BottomSheetDialogTheme);
                 View view1 = LayoutInflater.from(getContext())
-                        .inflate(R.layout.forgot_pop_up, (LinearLayout)getActivity().findViewById(R.id.forgot_id));
+                        .inflate(R.layout.forgot_pop_up, (LinearLayout) getActivity().findViewById(R.id.forgot_id));
                 final EditText forgotEditText = view1.findViewById(R.id.forgot_edit_text);
                 final Button forgotSendButton = view1.findViewById(R.id.forgot_send_button);
                 final TextView forgotBackButton = view1.findViewById(R.id.forgot_back_button);
@@ -123,27 +123,30 @@ public class KayitOlmaFragmentBir extends Fragment {
                 forgotSendButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        forgotSendButton.setVisibility(View.INVISIBLE);
-                        forgotProgressBar.setVisibility(View.VISIBLE);
-                        mAuth.sendPasswordResetEmail(forgotEditText.getText().toString())
-                                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<Void> task) {
+                        if (forgotEditText.getText().toString().matches("")) {
+                        } else {
+                            forgotSendButton.setVisibility(View.INVISIBLE);
+                            forgotProgressBar.setVisibility(View.VISIBLE);
+                            mAuth.sendPasswordResetEmail(forgotEditText.getText().toString())
+                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
 
-                                        if (task.isSuccessful()){
-                                            Toast.makeText(getActivity(),
-                                                    getResources().getString(R.string.password_send_to_your_email), Toast.LENGTH_LONG).show();
-                                            bottomSheetDialog.dismiss();
-                                        }else {
-                                            Toast.makeText(getActivity(),
-                                                    task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                            if (task.isSuccessful()) {
+                                                Toast.makeText(getActivity(),
+                                                        getResources().getString(R.string.password_send_to_your_email), Toast.LENGTH_LONG).show();
+                                                bottomSheetDialog.dismiss();
+                                            } else {
+                                                Toast.makeText(getActivity(),
+                                                        task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                            }
+                                            forgotSendButton.setVisibility(View.VISIBLE);
+                                            forgotProgressBar.setVisibility(View.INVISIBLE);
+
                                         }
-                                        forgotSendButton.setVisibility(View.VISIBLE);
-                                        forgotProgressBar.setVisibility(View.INVISIBLE);
+                                    });
 
-                                    }
-                                });
-
+                        }
                     }
                 });
 
@@ -165,12 +168,12 @@ public class KayitOlmaFragmentBir extends Fragment {
 
                 if (!validateEmail() | !validatePassword()) {
                     return;
-                }else {
-                    mAuth.signInWithEmailAndPassword(textInputLayoutEmail.getEditText().getText().toString(),textInputLayoutPassword.getEditText().getText().toString())
+                } else {
+                    mAuth.signInWithEmailAndPassword(textInputLayoutEmail.getEditText().getText().toString(), textInputLayoutPassword.getEditText().getText().toString())
                             .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()){
+                                    if (task.isSuccessful()) {
                                         //Intent
                                         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
                                         DatabaseReference databaseReference = firebaseDatabase.getReference("Profiles");
@@ -179,13 +182,13 @@ public class KayitOlmaFragmentBir extends Fragment {
                                             @Override
                                             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                                                for (DataSnapshot ds: snapshot.getChildren()){
+                                                for (DataSnapshot ds : snapshot.getChildren()) {
 
                                                     HashMap<String, String> hashMap = (HashMap<String, String>) ds.getValue();
 
-                                                    String userName= hashMap.get("username");
+                                                    String userName = hashMap.get("username");
 
-                                                    if (userName.matches(mAuth.getCurrentUser().getEmail().toString())){
+                                                    if (userName.matches(mAuth.getCurrentUser().getEmail().toString())) {
 
                                                         Long time = ds.child("time").getValue(Long.class);
 
@@ -205,38 +208,39 @@ public class KayitOlmaFragmentBir extends Fragment {
 
                                                         //inset to Database
                                                         ContentValues contentValues = new ContentValues();
-                                                        contentValues.put("username",usernameString);
-                                                        contentValues.put("time",time);
-                                                        contentValues.put("fiyat",Float.parseFloat(fiyatString));
-                                                        contentValues.put("name",nameString);
-                                                        contentValues.put("sigara",Integer.parseInt(sigaraSayisiString));
-                                                        contentValues.put("paket",Integer.parseInt(pakettekiSigaraSayisiString));
-                                                        contentValues.put("money",moneyString);
-                                                        contentValues.put("profileOne",Integer.parseInt(profileOneString));
-                                                        contentValues.put("profileTwo",Float.parseFloat(profileTwoString));
-                                                        contentValues.put("profileThreeHour",Integer.parseInt(profileThreeHourString));
-                                                        contentValues.put("profileThreeDay",Integer.parseInt(profileThreeDayString));
-                                                        contentValues.put("profileThreeMonth",Integer.parseInt(profileThreeMonthString));
-                                                        contentValues.put("motivation",motivationString);
+                                                        contentValues.put("username", usernameString);
+                                                        contentValues.put("time", time);
+                                                        contentValues.put("fiyat", Float.parseFloat(fiyatString));
+                                                        contentValues.put("name", nameString);
+                                                        contentValues.put("sigara", Integer.parseInt(sigaraSayisiString));
+                                                        contentValues.put("paket", Integer.parseInt(pakettekiSigaraSayisiString));
+                                                        contentValues.put("money", moneyString);
+                                                        contentValues.put("profileOne", Integer.parseInt(profileOneString));
+                                                        contentValues.put("profileTwo", Float.parseFloat(profileTwoString));
+                                                        contentValues.put("profileThreeHour", Integer.parseInt(profileThreeHourString));
+                                                        contentValues.put("profileThreeDay", Integer.parseInt(profileThreeDayString));
+                                                        contentValues.put("profileThreeMonth", Integer.parseInt(profileThreeMonthString));
+                                                        contentValues.put("motivation", motivationString);
 
                                                         String contentUriString = "content://com.kastudio.sonsigaram.LastContentProvider/last";
                                                         Uri contentUri = Uri.parse(contentUriString);
-                                                        Uri uri = KayitOlmaActivity.getInstance().getContentResolver().insert(contentUri,contentValues);
+                                                        Uri uri = KayitOlmaActivity.getInstance().getContentResolver().insert(contentUri, contentValues);
 
                                                     }
                                                 }
                                             }
+
                                             @Override
                                             public void onCancelled(@NonNull DatabaseError error) {
                                             }
                                         });
 
-                                        Intent intent = new Intent(getActivity(),AnaEkranActivity.class);
-                                        CustomIntent.customType(getActivity(),"fadein-to-fadeout");
+                                        Intent intent = new Intent(getActivity(), AnaEkranActivity.class);
+                                        CustomIntent.customType(getActivity(), "fadein-to-fadeout");
                                         startActivity(intent);
                                         getActivity().finish();
 
-                                    }else {
+                                    } else {
                                         Toast.makeText(getActivity(), task.getException().getMessage(), Toast.LENGTH_LONG).show();
                                     }
                                 }

@@ -78,7 +78,7 @@ public class KayitOlmaFragmentIki extends Fragment {
     TextView forgot;
 
 
-    public static KayitOlmaFragmentIki newInstance(){
+    public static KayitOlmaFragmentIki newInstance() {
         return new KayitOlmaFragmentIki();
     }
 
@@ -87,7 +87,7 @@ public class KayitOlmaFragmentIki extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.kayit_olma_fragment_iki,container,false);
+        View view = inflater.inflate(R.layout.kayit_olma_fragment_iki, container, false);
         return view;
     }
 
@@ -120,9 +120,9 @@ public class KayitOlmaFragmentIki extends Fragment {
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getContext(),R.style.BottomSheetDialogTheme);
+                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getContext(), R.style.BottomSheetDialogTheme);
                 View view1 = LayoutInflater.from(getContext())
-                        .inflate(R.layout.forgot_pop_up, (LinearLayout)getActivity().findViewById(R.id.forgot_id));
+                        .inflate(R.layout.forgot_pop_up, (LinearLayout) getActivity().findViewById(R.id.forgot_id));
                 final EditText forgotEditText = view1.findViewById(R.id.forgot_edit_text);
                 final Button forgotSendButton = view1.findViewById(R.id.forgot_send_button);
                 final TextView forgotBackButton = view1.findViewById(R.id.forgot_back_button);
@@ -131,27 +131,30 @@ public class KayitOlmaFragmentIki extends Fragment {
                 forgotSendButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        forgotSendButton.setVisibility(View.INVISIBLE);
-                        forgotProgressBar.setVisibility(View.VISIBLE);
-                        mAuth.sendPasswordResetEmail(forgotEditText.getText().toString())
-                                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<Void> task) {
+                        if (forgotEditText.getText().toString().matches("")) {
 
-                                        if (task.isSuccessful()){
-                                            Toast.makeText(getActivity(),
-                                                    getResources().getString(R.string.password_send_to_your_email), Toast.LENGTH_LONG).show();
-                                            bottomSheetDialog.dismiss();
-                                        }else {
-                                            Toast.makeText(getActivity(),
-                                                    task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        } else {
+                            forgotSendButton.setVisibility(View.INVISIBLE);
+                            forgotProgressBar.setVisibility(View.VISIBLE);
+                            mAuth.sendPasswordResetEmail(forgotEditText.getText().toString())
+                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+
+                                            if (task.isSuccessful()) {
+                                                Toast.makeText(getActivity(),
+                                                        getResources().getString(R.string.password_send_to_your_email), Toast.LENGTH_LONG).show();
+                                                bottomSheetDialog.dismiss();
+                                            } else {
+                                                Toast.makeText(getActivity(),
+                                                        task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                            }
+                                            forgotSendButton.setVisibility(View.VISIBLE);
+                                            forgotProgressBar.setVisibility(View.INVISIBLE);
+
                                         }
-                                        forgotSendButton.setVisibility(View.VISIBLE);
-                                        forgotProgressBar.setVisibility(View.INVISIBLE);
-
-                                    }
-                                });
-
+                                    });
+                        }
                     }
                 });
 
@@ -172,25 +175,26 @@ public class KayitOlmaFragmentIki extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), RegisterInfoActivity.class);
                 getActivity().startActivity(intent);
-                getActivity().overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
 
     }
 
-    public void googleLogIn(){
+    public void googleLogIn() {
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
 
-        mGoogleSignInClient = GoogleSignIn.getClient(KayitOlmaFragmentIki.this.getActivity(),gso);
+        mGoogleSignInClient = GoogleSignIn.getClient(KayitOlmaFragmentIki.this.getActivity(), gso);
 
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
 
     }
+
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         mAuth.signInWithCredential(credential)
@@ -200,16 +204,16 @@ public class KayitOlmaFragmentIki extends Fragment {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             boolean isNewUser = task.getResult().getAdditionalUserInfo().isNewUser();
-                            if (isNewUser){
-                                Intent intent = new Intent(getActivity(),RegisterInfoActivity.class);
-                                intent.putExtra("check",true);
-                                intent.putExtra("isNewUser",true);
+                            if (isNewUser) {
+                                Intent intent = new Intent(getActivity(), RegisterInfoActivity.class);
+                                intent.putExtra("check", true);
+                                intent.putExtra("isNewUser", true);
                                 startActivity(intent);
-                            }else {
+                            } else {
                                 getData();
                                 Intent intent = new Intent(getActivity(), AnaEkranActivity.class);
                                 startActivity(intent);
-                                CustomIntent.customType(getActivity(),"fadein-to-fadeout");
+                                CustomIntent.customType(getActivity(), "fadein-to-fadeout");
                                 getActivity().finish();
                             }
                         } else {
@@ -220,18 +224,20 @@ public class KayitOlmaFragmentIki extends Fragment {
                 });
     }
 
-    public void facebookLogIn(){
+    public void facebookLogIn() {
         mCallBackManager = CallbackManager.Factory.create();
         facebook.setFragment(this);
-        facebook.setReadPermissions("email","public_profile");
+        facebook.setReadPermissions("email", "public_profile");
         facebook.registerCallback(mCallBackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 handleFacebookAccessToken(loginResult.getAccessToken());
             }
+
             @Override
             public void onCancel() {
             }
+
             @Override
             public void onError(FacebookException error) {
             }
@@ -252,7 +258,7 @@ public class KayitOlmaFragmentIki extends Fragment {
             } catch (ApiException e) {
 
             }
-        }else {
+        } else {
 
             mCallBackManager.onActivityResult(requestCode, resultCode, data);
         }
@@ -269,27 +275,27 @@ public class KayitOlmaFragmentIki extends Fragment {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             boolean isNewUser = task.getResult().getAdditionalUserInfo().isNewUser();
-                            if (isNewUser){
-                                Intent intent = new Intent(getActivity(),RegisterInfoActivity.class);
-                                intent.putExtra("check",true);
-                                intent.putExtra("isNewUser",true);
+                            if (isNewUser) {
+                                Intent intent = new Intent(getActivity(), RegisterInfoActivity.class);
+                                intent.putExtra("check", true);
+                                intent.putExtra("isNewUser", true);
                                 startActivity(intent);
-                            }else {
+                            } else {
                                 getData();
                                 Intent intent = new Intent(getActivity(), AnaEkranActivity.class);
                                 startActivity(intent);
-                                CustomIntent.customType(getActivity(),"fadein-to-fadeout");
+                                CustomIntent.customType(getActivity(), "fadein-to-fadeout");
                                 getActivity().finish();
                             }
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(getActivity(),task.getException().getMessage(),Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity(), task.getException().getMessage(), Toast.LENGTH_LONG).show();
                         }
                     }
                 });
     }
 
-    public void getData(){
+    public void getData() {
 
         DatabaseReference newReference = firebaseDatabase.getReference("Profiles");
 
@@ -297,13 +303,13 @@ public class KayitOlmaFragmentIki extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                for (DataSnapshot ds: snapshot.getChildren()){
+                for (DataSnapshot ds : snapshot.getChildren()) {
 
-                    HashMap<String, String> hashMap = (HashMap<String,String>) ds.getValue();
+                    HashMap<String, String> hashMap = (HashMap<String, String>) ds.getValue();
 
                     String userName = hashMap.get("username");
 
-                    if (userName.matches(mAuth.getCurrentUser().getEmail().toString())){
+                    if (userName.matches(mAuth.getCurrentUser().getEmail().toString())) {
 
                         Long time = ds.child("time").getValue(Long.class);
 
@@ -323,23 +329,23 @@ public class KayitOlmaFragmentIki extends Fragment {
 
                         //inset to Database
                         ContentValues contentValues = new ContentValues();
-                        contentValues.put("username",usernameString);
-                        contentValues.put("time",time);
-                        contentValues.put("fiyat",Float.parseFloat(fiyatString));
-                        contentValues.put("name",nameString);
-                        contentValues.put("sigara",Integer.parseInt(sigaraSayisiString));
-                        contentValues.put("paket",Integer.parseInt(pakettekiSigaraSayisiString));
-                        contentValues.put("money",moneyString);
-                        contentValues.put("profileOne",Integer.parseInt(profileOneString));
-                        contentValues.put("profileTwo",Float.parseFloat(profileTwoString));
-                        contentValues.put("profileThreeHour",Integer.parseInt(profileThreeHourString));
-                        contentValues.put("profileThreeDay",Integer.parseInt(profileThreeDayString));
-                        contentValues.put("profileThreeMonth",Integer.parseInt(profileThreeMonthString));
-                        contentValues.put("motivation",motivationString);
+                        contentValues.put("username", usernameString);
+                        contentValues.put("time", time);
+                        contentValues.put("fiyat", Float.parseFloat(fiyatString));
+                        contentValues.put("name", nameString);
+                        contentValues.put("sigara", Integer.parseInt(sigaraSayisiString));
+                        contentValues.put("paket", Integer.parseInt(pakettekiSigaraSayisiString));
+                        contentValues.put("money", moneyString);
+                        contentValues.put("profileOne", Integer.parseInt(profileOneString));
+                        contentValues.put("profileTwo", Float.parseFloat(profileTwoString));
+                        contentValues.put("profileThreeHour", Integer.parseInt(profileThreeHourString));
+                        contentValues.put("profileThreeDay", Integer.parseInt(profileThreeDayString));
+                        contentValues.put("profileThreeMonth", Integer.parseInt(profileThreeMonthString));
+                        contentValues.put("motivation", motivationString);
 
                         String contentUriString = "content://com.kastudio.sonsigaram.LastContentProvider/last";
                         Uri contentUri = Uri.parse(contentUriString);
-                        Uri uri = getActivity().getContentResolver().insert(contentUri,contentValues);
+                        Uri uri = getActivity().getContentResolver().insert(contentUri, contentValues);
                     }
                 }
             }
